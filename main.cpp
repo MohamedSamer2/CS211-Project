@@ -3,8 +3,8 @@
 DigitalOut trig(D6);
 InterruptIn echo(D7);
 
-DigitalOut in1(D4);
-DigitalOut in2(D5);
+DigitalOut in2(D4);
+DigitalOut in4(D5);
 PwmOut motorSpeed(D3);
 PwmOut motorSpeed1(D9);
 
@@ -44,16 +44,16 @@ void ultrasonic_trigger()
 
 void motor_stop()
 {
-    in1 = 1;
     in2 = 1;
+    in4 = 1;
     motorSpeed.write(0);
     motorSpeed1.write(0);
 }
 
 void motor_forward()
 {
-    in1 = 1;
     in2 = 1;
+    in4 = 1;
     motorSpeed.write(0.325f);
     motorSpeed1.write(0.325f);
 }

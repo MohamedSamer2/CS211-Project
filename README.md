@@ -11,7 +11,7 @@ The application is entirely contained within `main.cpp` and relies on the Mbed O
 1. **Hardware Abstraction:**
    - `trig` (D6): Digital output to trigger the ultrasonic sensor.
    - `echo` (D7): Interrupt input to measure the pulse width returned by the sensor.
-   - `in1`, `in2` (D4, D5): Motor direction control pins.
+   - `in2`, `in4` (D4, D5): Forward pins (connected to In2 and In4 on the H-bridge for forward-only movement, no direction control).
    - `motorSpeed`, `motorSpeed1` (D3, D9): PWM outputs for motor speed control.
 
 2. **Core Logic Functions:**
