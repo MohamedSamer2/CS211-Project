@@ -1,0 +1,11 @@
+.build
+projectfiles
+*.py*
+
+# Mbed Build Artifacts
+BUILD/
+*.bin
+*.elf
+*.map
+*.o
+*.d
